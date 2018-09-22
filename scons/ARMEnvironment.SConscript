@@ -19,7 +19,7 @@ def ARMEnvironment(*a, **kw):
 		if env['ENV'].has_key("CROSS"):
 			env['CROSS'] = env['ENV']['CROSS']
 		else:
-			env["CROSS"] = 'arm-elf-'
+			env["CROSS"] = 'arm-none-eabi'
 
 	env["CC"] = env["CROSS"] + 'gcc'
 	env["OBJCOPY"] = env["CROSS"] + 'objcopy'
